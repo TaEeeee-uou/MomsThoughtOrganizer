@@ -20,12 +20,15 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: var(--font-sans);
-    line-height: 2.0; /* ゆったりとした行間 */
+    line-height: 2.0;
+    /* ゆったりとした行間 */
     letter-spacing: 0.05em;
     -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: var(--font-serif);
     font-weight: 500;
 }
@@ -101,7 +104,8 @@ h1, h2, h3 {
 /* Themes Section */
 .themes-section {
     padding: var(--spacing-lg) 0;
-    background-color: #fff; /* Slight contrast */
+    background-color: #fff;
+    /* Slight contrast */
     margin-top: var(--spacing-lg);
 }
 
@@ -120,7 +124,7 @@ h1, h2, h3 {
 
 .theme-list li {
     padding: var(--spacing-sm) 0;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     position: relative;
     padding-left: 1.5em;
 }
@@ -140,6 +144,55 @@ h1, h2, h3 {
     color: #999;
 }
 
+/* Profile Section */
+.profile-section {
+    padding: var(--spacing-lg) 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.profile-content p {
+    margin-bottom: var(--spacing-md);
+}
+
+/* Service Section */
+.service-section {
+    padding: var(--spacing-lg) 0;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    justify-content: center;
+    margin-top: var(--spacing-md);
+}
+
+.service-item {
+    flex: 1 1 250px;
+    max-width: 300px;
+    background-color: #fff;
+    padding: var(--spacing-md);
+    border-radius: 4px;
+    /* Soft edges, not too round */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    text-align: center;
+}
+
+.service-item h3 {
+    color: var(--accent-earth);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.1rem;
+    border-bottom: 1px solid var(--accent-green);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.service-item p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
 /* Animations */
 .fade-in {
     opacity: 0;
@@ -157,7 +210,7 @@ h1, h2, h3 {
     .main-title {
         font-size: 1.8rem;
     }
-    
+
     :root {
         --spacing-lg: 3rem;
     }
