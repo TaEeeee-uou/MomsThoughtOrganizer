@@ -1,0 +1,164 @@
+:root {
+    --bg-color: #F9F9F7;
+    --text-color: #4A4A4A;
+    --accent-green: #8DA399;
+    --accent-earth: #D4A373;
+    --font-serif: 'Zen Old Mincho', serif;
+    --font-sans: 'Zen Kaku Gothic New', sans-serif;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-sans);
+    line-height: 2.0; /* ゆったりとした行間 */
+    letter-spacing: 0.05em;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+/* Header */
+.site-header {
+    padding: var(--spacing-md) 0;
+    text-align: center;
+    font-family: var(--font-serif);
+    font-size: 0.9rem;
+    color: var(--accent-green);
+}
+
+/* Hero Section */
+.hero-section {
+    padding: var(--spacing-lg) 0;
+    text-align: center;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.4;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: var(--accent-earth);
+    margin-bottom: var(--spacing-md);
+    font-family: var(--font-serif);
+}
+
+.hero-content {
+    margin-top: var(--spacing-md);
+}
+
+/* Philosophy Section */
+.philosophy-section {
+    padding: var(--spacing-lg) 0;
+    text-align: center;
+}
+
+.text-block {
+    margin-bottom: var(--spacing-lg);
+}
+
+.text-block p {
+    margin-bottom: var(--spacing-sm);
+}
+
+.strong-message {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    color: var(--accent-green);
+}
+
+.closing {
+    margin-top: var(--spacing-md);
+    font-weight: 500;
+}
+
+/* Themes Section */
+.themes-section {
+    padding: var(--spacing-lg) 0;
+    background-color: #fff; /* Slight contrast */
+    margin-top: var(--spacing-lg);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    font-size: 1.5rem;
+    color: var(--accent-earth);
+}
+
+.theme-list {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.theme-list li {
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    position: relative;
+    padding-left: 1.5em;
+}
+
+.theme-list li::before {
+    content: "・";
+    position: absolute;
+    left: 0;
+    color: var(--accent-green);
+}
+
+/* Footer */
+.site-footer {
+    padding: var(--spacing-md) 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .main-title {
+        font-size: 1.8rem;
+    }
+    
+    :root {
+        --spacing-lg: 3rem;
+    }
+}
