@@ -62,7 +62,7 @@ h3 {
     flex-direction: column;
 
     /* Background Image */
-    background-image: linear-gradient(rgba(249, 249, 247, 0.5), rgba(249, 249, 247, 0.5)), url('images/hero_mom_child_school.png');
+    background-image: linear-gradient(rgba(249, 249, 247, 0.7), rgba(249, 249, 247, 0.7)), url('images/hero_mom_girl.png');
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
